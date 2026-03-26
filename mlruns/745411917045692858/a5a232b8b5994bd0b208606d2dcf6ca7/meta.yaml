@@ -1,0 +1,14 @@
+artifact_uri: file:D:/lpu/project ml/MLOps Pipeline/mlruns/745411917045692858/a5a232b8b5994bd0b208606d2dcf6ca7/artifacts
+end_time: 1770382824901
+entry_point_name: ''
+experiment_id: '745411917045692858'
+lifecycle_stage: active
+run_id: a5a232b8b5994bd0b208606d2dcf6ca7
+run_name: invincible-grub-856
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770382812816
+status: 3
+tags: []
+user_id: thaku

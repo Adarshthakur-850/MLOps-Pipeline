@@ -1,0 +1,14 @@
+artifact_uri: file:D:/lpu/project ml/MLOps Pipeline/mlruns/745411917045692858/2bb41fd203bd420d8f27bf7e5f9ec0e2/artifacts
+end_time: 1770382751688
+entry_point_name: ''
+experiment_id: '745411917045692858'
+lifecycle_stage: active
+run_id: 2bb41fd203bd420d8f27bf7e5f9ec0e2
+run_name: vaunted-shoat-493
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770382751256
+status: 4
+tags: []
+user_id: thaku

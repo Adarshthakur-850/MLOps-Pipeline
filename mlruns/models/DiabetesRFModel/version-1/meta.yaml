@@ -1,0 +1,15 @@
+creation_timestamp: 1770382824840
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1770382824840
+model_id: m-0b90e1b43d7f4999a6a37cd2f25a82f6
+name: DiabetesRFModel
+run_id: a5a232b8b5994bd0b208606d2dcf6ca7
+run_link: null
+source: models:/m-0b90e1b43d7f4999a6a37cd2f25a82f6
+status: READY
+status_message: null
+storage_location: file:D:/lpu/project ml/MLOps Pipeline/mlruns/745411917045692858/models/m-0b90e1b43d7f4999a6a37cd2f25a82f6/artifacts
+user_id: null
+version: 1

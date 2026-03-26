@@ -1,0 +1,43 @@
+name: MLOps Pipeline CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-train:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.9"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Model Training
+      # In a real CI env, we need a running MLflow server or use local file tracking
+      # Here we let it run, it might fail logging to localhost:5000 if not spinning up mlflow
+      # We override URI to local for CI testing purposes
+      env:
+        MLFLOW_TRACKING_URI: "file:///tmp/mlruns"
+      run: |
+        python src/train.py
+
+    - name: Build Docker Image
+      run: |
+        docker build -t mlops-api .
+      
+    # - name: Push Docker Image (Optional - requires Docker Hub credentials)
+    #   run: |
+    #     echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+    #     docker tag mlops-api myusername/mlops-api:latest
+    #     docker push myusername/mlops-api:latest
