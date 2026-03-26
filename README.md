@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MLOps Pipeline
 
 End-to-End MLOps project demonstrating code versioning, experiment tracking (MLflow), containerization (Docker), and CI/CD (GitHub Actions).
@@ -37,3 +38,7 @@ docker-compose up --build
 
 ## CI/CD
 The `.github/workflows/mlops.yml` defines the pipeline that runs on every push to `main`.
+=======
+# MLOps-Pipeline
+ml project
+>>>>>>> 9c4f7813544b578b0948d56052b53896ee89056a
