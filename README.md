@@ -265,4 +265,5 @@ This project is licensed under the MIT License.
 For any queries or collaboration opportunities:
 
 Email: [thakuradarsh8368@gmail.com](mailto:thakuradarsh8368@gmail.com)
+
 GitHub: [https://github.com/Adarshthakur-850](https://github.com/Adarshthakur-850)
